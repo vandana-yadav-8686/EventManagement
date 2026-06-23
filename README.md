@@ -97,7 +97,7 @@ src/
 ### Step 1 — Clone and install
 
 ```bash
-git clone <your-repository-url>
+git clone <https://github.com/vandana-yadav-8686/EventManagement.git>
 cd "Event Management application"
 npm install
 ```
@@ -128,7 +128,6 @@ GEMINI_API_KEY=your_full_api_key_here
 | `MONGODB_URI` | Yes | MongoDB Atlas connection string |
 | `GEMINI_API_KEY` | No (for CRUD) | Full key from Google AI Studio (may start with `AIza...` or `AQ.`) |
 
-**Do not commit `.env` to Git** — it is listed in `.gitignore`.
 
 ### Step 3 — MongoDB Atlas setup
 
@@ -165,21 +164,6 @@ Expected response:
   }
 }
 ```
-
-### Step 5 — Run the application
-
-**Development mode:**
-
-```bash
-npm run dev
-```
-
-If you see stale or broken pages after code changes:
-
-```bash
-npm run dev:clean
-```
-
 Open [http://localhost:3000](http://localhost:3000)
 
 **Production mode (faster):**
@@ -188,16 +172,6 @@ Open [http://localhost:3000](http://localhost:3000)
 npm run build
 npm start
 ```
-
-### Step 6 — Deploy (optional)
-
-1. Push the repository to GitHub
-2. Import the project on [Vercel](https://vercel.com)
-3. Add environment variables: `MONGODB_URI`, `GEMINI_API_KEY`
-4. Deploy and add the live URL below
-
----
-
 ## Live Demo
 
 _Add your deployment URL here after deploying to Vercel, e.g. `https://your-app.vercel.app`_
@@ -252,29 +226,7 @@ All API responses use a consistent shape:
 
 ---
 
-## AI Tools Used
 
-| Tool | How It Was Used |
-|------|-----------------|
-| **Cursor (AI IDE)** | Project scaffolding, API routes, React components, validation logic, performance optimizations, and documentation |
-| **Google Gemini API** | Runtime generation of event descriptions and speaker introductions (bonus feature) |
-
-For a detailed breakdown of approach, challenges, and design decisions, see **[SOLUTION_NOTES.md](./SOLUTION_NOTES.md)**.
-
----
-
-## Troubleshooting
-
-| Problem | Solution |
-|---------|----------|
-| `bad auth` from MongoDB | Check username/password in Atlas; URL-encode special characters in password |
-| `Database authentication failed` | Verify Network Access in Atlas allows your IP |
-| Gemini quota exceeded | Wait and retry, enable billing in AI Studio, or use a new Google account/project |
-| `missing required error components` | Run `npm run dev:clean`; stop all other `npm run dev` terminals |
-| Slow pages in dev | Use `npm run build && npm start` for production-like speed |
-| API key not working | Copy the **full** key via **Copy key** in AI Studio (include `AQ.` prefix if present) |
-
----
 
 ## Scripts
 
@@ -288,6 +240,3 @@ For a detailed breakdown of approach, challenges, and design decisions, see **[S
 
 ---
 
-## License
-
-MIT — built for ConferenceTV technical assessment purposes.
