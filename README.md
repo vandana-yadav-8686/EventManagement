@@ -178,7 +178,7 @@ _Add your deployment URL here after deploying to Vercel, e.g. `https://event-man
 
 ---
 
-## API Reference
+## API Reference 
 
 | Method | Endpoint | Description | Status Codes |
 |--------|----------|-------------|--------------|
