@@ -174,7 +174,7 @@ npm start
 ```
 ## Live Demo
 
-_Add your deployment URL here after deploying to Vercel, e.g. `https://your-app.vercel.app`_
+_Add your deployment URL here after deploying to Vercel, e.g. `https://event-management-qefo.vercel.app/`_
 
 ---
 
