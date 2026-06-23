@@ -182,7 +182,7 @@ _Add your deployment URL here after deploying to Vercel, e.g. `https://event-man
 
 | Method | Endpoint | Description | Status Codes |
 |--------|----------|-------------|--------------|
-| GET | `/api/health` | Check database connection | 200, 503 |
+| GET | `/api/health` | Check database connection | 200, 503 | 
 | GET | `/api/events` | List all events | 200, 500 |
 | POST | `/api/events` | Create event | 201, 400, 500 |
 | GET | `/api/events/:id` | Get one event | 200, 400, 404, 500 |
